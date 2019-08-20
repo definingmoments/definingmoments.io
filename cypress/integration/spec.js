@@ -1,19 +1,5 @@
 describe('Sapper template app', () => {
-	beforeEach(() => {
-		cy.visit('/')
+	it('Does not do much!', function() {
+		expect(true).to.equal(true)
+	  })
 	});
-
-	it('has the correct <h1>', () => {
-		cy.contains('h1', 'Great success!')
-	});
-
-	it('navigates to /about', () => {
-		cy.get('nav a').contains('about').click();
-		cy.url().should('include', '/about');
-	});
-
-	it('navigates to /blog', () => {
-		cy.get('nav a').contains('blog').click();
-		cy.url().should('include', '/blog');
-	});
-});
