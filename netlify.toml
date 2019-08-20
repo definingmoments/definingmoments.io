@@ -1,6 +1,6 @@
     
 # example netlify.toml
 [build]
-  command = "npm run build"
+  command = "npx run export"
   functions = "functions"
-  publish = "__sapper__/build"
+  publish = "__sapper__/export"
